@@ -50,14 +50,14 @@ message State
 
     repeated Robot robots = 2;
 
-    float m_random_param = 3;
-    int32 m_target_str   = 4;
+    float random_param = 3;
+    int32 target_str   = 4;
 
-    bool m_is_defending  = 5;
-    bool m_opp_restarted = 6;
+    bool is_defending  = 5;
+    bool opp_restarted = 6;
 
-    bool m_gk_intercepting = 7;
+    bool gk_intercepting = 7;
 
-    int32 m_func_state = 8;
-    int32 m_func_count = 9;
+    int32 func_state = 8;
+    int32 func_count = 9;
 }
