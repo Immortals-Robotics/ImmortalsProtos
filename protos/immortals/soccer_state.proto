@@ -50,8 +50,8 @@ message State
 
     repeated Robot robots = 2;
 
-    float random_param = 3;
-    int32 target_str   = 4;
+    float  random_param = 3;
+    string target_str   = 4;
 
     bool is_defending  = 5;
     bool opp_restarted = 6;
