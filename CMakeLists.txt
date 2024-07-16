@@ -38,6 +38,7 @@ set(PROTO_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/immortals/micro.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/immortals/play_book.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/immortals/referee_state.proto
+        ${CMAKE_CURRENT_SOURCE_DIR}/protos/immortals/soccer_state.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/immortals/world_state.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/ssl-common/ssl_common.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/ssl-common/ssl_geometry.proto

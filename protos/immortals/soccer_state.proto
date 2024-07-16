@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+import "protos/immortals/common.proto";
+
+package Protos.Immortals.Soccer;
+
+enum Role
+{
+    Unknown = 0;
+    Gk      = 1;
+    Def     = 2;
+    Dmf     = 3;
+    Mid2    = 4;
+    Mid1    = 5;
+    Attack  = 6;
+    Rw      = 7;
+    Lw      = 8;
+}
+
+enum OneTouchType
+{
+    OneTouch = 0;
+    Shirje   = 1;
+    Gool     = 2;
+    Allaf    = 3;
+}
+
+message Robot
+{
+    uint32 id = 1;
+
+    Role role = 10;
+
+    float shoot      = 11;
+    float chip       = 12;
+    float dribbler   = 13;
+    bool  navigated  = 14;
+    bool  halted     = 15;
+
+    OneTouchType one_touch_type      = 16;
+    bool        one_touch_arriving   = 17;
+    bool         one_touch_type_used = 18;
+
+    int32 mark_target = 19;
+}
+
+message State
+{
+    fixed64 time = 1;
+
+    repeated Robot robots = 2;
+
+    float m_random_param = 3;
+    int32 m_target_str   = 4;
+
+    bool m_is_defending  = 5;
+    bool m_opp_restarted = 6;
+
+    bool m_gk_intercepting = 7;
+
+    int32 m_func_state = 8;
+    int32 m_func_count = 9;
+}
