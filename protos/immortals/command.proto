@@ -14,9 +14,9 @@ message Command
     Angle current_angle = 4;
     Angle target_angle  = 5;
 
-    int32 shoot    = 6;
-    int32 chip     = 7;
-    int32 dribbler = 8;
+    float shoot    = 6;
+    float chip     = 7;
+    float dribbler = 8;
 }
 
 message CommandsWrapper
